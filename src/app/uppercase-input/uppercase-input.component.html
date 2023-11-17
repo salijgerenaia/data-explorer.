@@ -1,0 +1,12 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Uppercase Text</mat-label>
+      <input matInput formControlName="uppercaseInput" placeholder="Enter uppercase text">
+      <mat-error *ngIf="uppercaseInput?.hasError('notUppercase')">
+        Please enter uppercase letters only.
+      </mat-error>
+    </mat-form-field>
+  
+    <button mat-button type="submit">Submit</button>
+  </form>
+  
