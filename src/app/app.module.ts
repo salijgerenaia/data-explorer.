@@ -11,13 +11,13 @@ import { MatTableModule} from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { UppercaseInputComponent } from './uppercase-input/uppercase-input.component';
 import { RoundedNumberInputComponent } from './rounded-number-input/rounded-number-input.component';
-import { CalendarInputComponent } from './calendar-input/calendar-input.component';
 import { DropdownInputComponent } from './dropdown-input/dropdown-input.component';
 import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DataComponent } from './data/data.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 
@@ -27,11 +27,11 @@ import { DataComponent } from './data/data.component';
     AppComponent,
     UppercaseInputComponent,
     RoundedNumberInputComponent,
-    CalendarInputComponent,
     DropdownInputComponent,
     DynamicTableComponent,
     HeaderComponent,
     DataComponent,
+    CalendarComponent,
 
   ],
   imports: [
