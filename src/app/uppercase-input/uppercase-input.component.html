@@ -2,6 +2,8 @@
     <mat-form-field>
       <mat-label>Uppercase Text</mat-label>
       <input matInput formControlName="uppercaseInput" placeholder="Enter uppercase text">
+      <mat-error *ngIf="uppercaseInput?.hasError('required')">
+      Please enter uppercase letters only.</mat-error>
       <mat-error *ngIf="uppercaseInput?.hasError('notUppercase')">
         Please enter uppercase letters only.
       </mat-error>
@@ -10,3 +12,14 @@
     <button mat-button type="submit">Submit</button>
   </form>
   
+
+  <!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Rounded Number</mat-label>
+      <input matInput formControlName="roundedNumber" placeholder="Enter rounded number">
+      <mat-error *ngIf="roundedNumberInput?.hasError('required')">
+        Please enter a number rounded to hundreds.
+      </mat-error>
+      <mat-error *ngIf="roundedNumberInput?.hasError('pattern')">
+        Please enter a valid number.
+      </mat-error> -->

@@ -14,6 +14,8 @@ import { RoundedNumberInputComponent } from './rounded-number-input/rounded-numb
 import { CalendarInputComponent } from './calendar-input/calendar-input.component';
 import { DropdownInputComponent } from './dropdown-input/dropdown-input.component';
 import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
     MatInputModule,
     MatTableModule,
     MatDatepickerModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
