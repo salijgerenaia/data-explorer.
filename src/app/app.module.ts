@@ -15,6 +15,10 @@ import { CalendarInputComponent } from './calendar-input/calendar-input.componen
 import { DropdownInputComponent } from './dropdown-input/dropdown-input.component';
 import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { HeaderComponent } from './header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { DataComponent } from './data/data.component';
+
 
 
 
@@ -26,6 +30,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     CalendarInputComponent,
     DropdownInputComponent,
     DynamicTableComponent,
+    HeaderComponent,
+    DataComponent,
 
   ],
   imports: [
@@ -38,7 +44,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatTableModule,
     MatDatepickerModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

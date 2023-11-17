@@ -1,19 +1,12 @@
-<!-- <form action="">
-
-    <input type="text" name="" id="">
-    <input type="number" name="" id="">
-    <input type="number" name="" id="">
-    <input type="number" name="" id="">
-    <input type="number" name="" id="">
-
-</form> -->
-
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-    <mat-form-field>
-      <mat-label>Rounded Number</mat-label>
+  <mat-form-field>
+    <mat-label>Rounded Number</mat-label>
 
-
-    <input matInput formControlName="roundedNumber" placeholder="Enter rounded number">
+    <input
+      matInput
+      formControlName="roundedNumber"
+      placeholder="Enter rounded number"
+    />
     <mat-error *ngIf="roundedNumberInput?.hasError('required')">
       Please enter a number rounded to hundreds.
     </mat-error>
@@ -22,12 +15,5 @@
     </mat-error>
   </mat-form-field>
 
-  
   <button mat-button type="submit">Submit</button>
-
-
-      
-
-
 </form>
-  
