@@ -6,21 +6,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
-import { MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { UppercaseInputComponent } from './uppercase-input/uppercase-input.component';
 import { RoundedNumberInputComponent } from './rounded-number-input/rounded-number-input.component';
 import { DropdownInputComponent } from './dropdown-input/dropdown-input.component';
-import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DataComponent } from './data/data.component';
 import { CalendarComponent } from './calendar/calendar.component';
-
-
-
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import {
+  DateTimePickerModule,
+  MaskedDateTimeService,
+} from '@syncfusion/ej2-angular-calendars';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,9 @@ import { CalendarComponent } from './calendar/calendar.component';
     UppercaseInputComponent,
     RoundedNumberInputComponent,
     DropdownInputComponent,
-    DynamicTableComponent,
     HeaderComponent,
     DataComponent,
     CalendarComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -43,11 +43,14 @@ import { CalendarComponent } from './calendar/calendar.component';
     MatInputModule,
     MatTableModule,
     MatDatepickerModule,
+    MatNativeDateModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    TimepickerModule,
+    DateTimePickerModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [MaskedDateTimeService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

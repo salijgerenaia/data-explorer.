@@ -33,8 +33,6 @@ export class UppercaseInputComponent {
   onSubmit() {
     if (this.myForm.valid) {
       console.log('Form submitted!');
-      // Access form values using this.myForm.value
-      // For example: console.log(this.myForm.value.uppercaseInput);
     } else {
       console.log('Form invalid!');
     }

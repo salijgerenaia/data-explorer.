@@ -1,8 +1,16 @@
+<header>
+  <app-header></app-header>
+</header>
+
 <body>
-<app-uppercase-input></app-uppercase-input>
-<app-rounded-number-input></app-rounded-number-input>
-<app-dropdown-input></app-dropdown-input>
-<!-- <app-dynamic-table></app-dynamic-table> -->
-<app-header></app-header>
-<app-data></app-data>
+  <div class="input-container">
+    <app-uppercase-input></app-uppercase-input>
+    <app-rounded-number-input></app-rounded-number-input>
+    <app-dropdown-input></app-dropdown-input>
+  </div>
+
+  <app-calendar (timeSelected)="onTimeSelected($event)"></app-calendar>
+  <app-data></app-data>
 </body>
+
+<footer></footer>

@@ -1,11 +1,16 @@
 <mat-form-field>
-    <mat-label>Select Countries</mat-label>
-    <mat-select placeholder="Options" [(ngModel)]="selectedOptions" name="selectedOptions">
-      <mat-option *ngFor="let option of options" [value]="option.value">
-        {{ option.label }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-  
-  <button mat-raised-button color="primary" (click)="onSubmitForm()">Submit</button>
-  
+  <mat-label>Select Countries</mat-label>
+  <mat-select
+    placeholder="Options"
+    [(ngModel)]="selectedOptions"
+    name="selectedOptions"
+  >
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<br />
+<button mat-raised-button color="primary" (click)="onSubmitForm()">
+  Submit
+</button>

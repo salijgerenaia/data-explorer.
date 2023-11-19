@@ -1,0 +1,15 @@
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  app-uppercase-input,
+  app-rounded-number-input,
+  app-dropdown-input {
+    margin: 10px; 
+    
+  }
+  
+  
