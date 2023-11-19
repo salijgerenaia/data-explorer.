@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
@@ -18,11 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DataComponent } from './data/data.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import { TimepickerModule } from 'ngx-bootstrap/timepicker';
-import {
-  DateTimePickerModule,
-  MaskedDateTimeService,
-} from '@syncfusion/ej2-angular-calendars';
+import { DateTimePickerModule, MaskedDateTimeService } from '@syncfusion/ej2-angular-calendars';
 
 @NgModule({
   declarations: [
@@ -42,12 +36,9 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
     MatSelectModule,
     MatCheckboxModule,
     MatToolbarModule,
-    TimepickerModule,
     DateTimePickerModule,
   ],
   providers: [MaskedDateTimeService],
