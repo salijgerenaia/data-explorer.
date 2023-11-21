@@ -1,3 +1,4 @@
+import { CalendarComponent } from './calendar/calendar.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,9 +16,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DataComponent } from './data/data.component';
-import { CalendarComponent } from './calendar/calendar.component';
 import { DateTimePickerModule, MaskedDateTimeService } from '@syncfusion/ej2-angular-calendars';
-
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { DateTimePickerModule, MaskedDateTimeService } from '@syncfusion/ej2-ang
     DropdownInputComponent,
     HeaderComponent,
     DataComponent,
-    CalendarComponent,
+    CalendarComponent
+
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,8 @@ import { DateTimePickerModule, MaskedDateTimeService } from '@syncfusion/ej2-ang
     MatCheckboxModule,
     MatToolbarModule,
     DateTimePickerModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
   providers: [MaskedDateTimeService],
   bootstrap: [AppComponent],
