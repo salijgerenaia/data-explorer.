@@ -7,7 +7,8 @@
   
   app-uppercase-input,
   app-rounded-number-input,
-  app-dropdown-input {
+  app-dropdown-input,
+  app-calendar {
     margin: 10px; 
     
   }

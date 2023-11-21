@@ -19,6 +19,8 @@ import { DataComponent } from './data/data.component';
 import { DateTimePickerModule, MaskedDateTimeService } from '@syncfusion/ej2-angular-calendars';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,9 +45,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker'
     MatToolbarModule,
     DateTimePickerModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatCardModule
   ],
-  providers: [MaskedDateTimeService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,13 +7,15 @@
       formControlName="roundedNumber"
       placeholder="Enter rounded number"
     />
+
     <mat-error *ngIf="roundedNumberInput?.hasError('required')">
-      Please enter a number rounded to hundreds.
+      Enter a number rounded to hundreds.
     </mat-error>
     <mat-error *ngIf="roundedNumberInput?.hasError('pattern')">
-      Please enter a valid number.
+      Enter a number rounded to hundreds.
     </mat-error>
   </mat-form-field>
+  
   <br />
 
   <button mat-button type="submit">Submit</button>

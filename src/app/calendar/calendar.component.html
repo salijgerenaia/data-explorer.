@@ -9,9 +9,9 @@
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
-</div>
 
-<div>
+  <br/>
+
   <mat-form-field>
     <mat-label>Select Hour</mat-label>
     <mat-select (selectionChange)="onTimeSelected($event)">
@@ -29,4 +29,6 @@
       }}</mat-option>
     </mat-select>
   </mat-form-field>
+  <br />
+  <button mat-raised-button color="primary" (click)="submit()" [disabled]="!isDateTimeComplete">Submit</button>
 </div>
